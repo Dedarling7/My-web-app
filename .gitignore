@@ -1,7 +1,0 @@
-# Never commit local credentials or Supabase secrets
-.env
-.env.*
-!.env.example
-supabase/.temp/
-node_modules/
-.DS_Store
