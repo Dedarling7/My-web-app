@@ -1,2 +1,12 @@
-- name: Supabase CLI Action
-  uses: supabase/setup-cli@v3.2.0
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: supabase/setup-cli@v3
+        with:
+          version: latest
+
+      - name: Check Supabase CLI version
+        run: supabase --version
